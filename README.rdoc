@@ -1,0 +1,60 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+-----------
+
+PAG NANALO NA, LIKE NACOMPLETE (ALA PA TO)
+
+
+game
+- gtype #ung name ng game
+- quantity #number of questions lang to
+- code
+
+question
+- code
+- number #question_number
+- game_id
+
+user
+- email/username
+- pw
+
+user_game
+- status #default is true. tas false pag talo na
+- user_id
+- game_id
+
+user_game_questions
+- user_game_id
+- question_id
+- status
+
+user can play many games/game can be played by many users
+game has many questions
